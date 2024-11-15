@@ -80,7 +80,7 @@
                 />
               </v-col>
               <v-col cols="12" lg="9" class="px-sm-4 pa-lg-6">
-                <img src="/eoe.png" class="elevation-10 rounded-lg" />
+                <img src="/eoe.png" width="100%" class="elevation-10 rounded-lg" />
               </v-col>
               <v-divider class="mt-3 mb-5" color="black" />
               <v-col cols="12" lg="3" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
@@ -93,99 +93,39 @@
               <v-col cols="12" lg="9" class="px-sm-4 pa-lg-6">
                 <v-row class="mb-3">
                   <v-col cols="12" sm="6">
-                    <v-card rounded="lg" hover>
-                      <h4 class="my-2 mx-4">IAG</h4>
-                      <img src="/iag.png" width="100%" />
-                      <v-btn 
-                        href="https://iagbenefits.com"
-                        rounded
-                        flat
-                        text="View"
-                        target="_blank"
-                        append-icon="mdi-open-in-new"
-                        color="orange-darken-2"
-                        class="ma-4"
-                      />
+                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover href="https://iagbenefits.com" target="_blank">
+                      <h4 class="my-2 mx-4 text-white">IAG</h4>
+                      <img src="/iag.png" width="100%" class="mb-n3" />
                     </v-card>
                   </v-col>
                   <v-col cols="12" sm="6">
-                    <v-card rounded="lg" hover>
-                      <h4 class="my-2 mx-4">Essential StaffCARE</h4>
-                      <img src="/esc.png" class="border-t border-b" width="100%" />
-                      <v-btn 
-                        href="https://essentialstaffcare.com"
-                        rounded
-                        flat
-                        text="View"
-                        target="_blank"
-                        append-icon="mdi-open-in-new"
-                        color="orange-darken-2"
-                        class="ma-4"
-                      />
+                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover href="https://essentialstaffcare.com" target="_blank">
+                      <h4 class="my-2 mx-4 text-white">Essential StaffCARE</h4>
+                      <img src="/esc.png" class="border-t mb-n3" width="100%" />
                     </v-card>
                   </v-col>
                   <v-col cols="12" sm="6">
-                    <v-card rounded="lg" hover>
-                      <h4 class="my-2 mx-4">Essential StaffCARE Events</h4>
-                      <img src="/events.png" width="100%" />
-                      <v-btn 
-                        href="https://events.essentialstaffcare.com"
-                        rounded
-                        flat
-                        text="View"
-                        target="_blank"
-                        append-icon="mdi-open-in-new"
-                        color="orange-darken-2"
-                        class="ma-4"
-                      />
+                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover href="https://events.essentialstaffcare.com" target="_blank">
+                      <h4 class="my-2 mx-4 text-white">Essential StaffCARE Events</h4>
+                      <img src="/events.png" width="100%" class="mb-n3" />
                     </v-card>
                   </v-col>
                   <v-col cols="12" sm="6">
-                    <v-card rounded="lg" hover>
-                      <h4 class="my-2 mx-4">HospitalityCARE</h4>
-                      <img src="/hc.png" class="border-t border-b" width="100%" />
-                      <v-btn 
-                        href="https://hospitalitycare.com"
-                        rounded
-                        flat
-                        text="View"
-                        target="_blank"
-                        append-icon="mdi-open-in-new"
-                        color="orange-darken-2"
-                        class="ma-4"
-                      />
+                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover href="https://hospitalitycare.com" target="_blank">
+                      <h4 class="my-2 mx-4 text-white">HospitalityCARE</h4>
+                      <img src="/hc.png" class="border-t mb-n3" width="100%" />
                     </v-card>
                   </v-col>
                   <v-col cols="12" sm="6">
-                    <v-card rounded="lg" hover>
-                      <h4 class="my-2 mx-4">Flexible StaffCARE</h4>
-                      <img src="/fsc.png" width="100%" />
-                      <v-btn 
-                        href="https://flexiblestaffcare.com"
-                        rounded
-                        flat
-                        text="View"
-                        target="_blank"
-                        append-icon="mdi-open-in-new"
-                        color="orange-darken-2"
-                        class="ma-4"
-                      />
+                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover href="https://flexiblestaffcare.com" target="_blank">
+                      <h4 class="my-2 mx-4 text-white">Flexible StaffCARE</h4>
+                      <img src="/fsc.png" width="100%" class="mb-n3" />
                     </v-card>
                   </v-col>
                   <v-col cols="12" sm="6">
-                    <v-card rounded="lg" hover>
-                      <h4 class="my-2 mx-4">Enrollment.care</h4>
-                      <img src="/enrollcare.png" class="border-t border-b" width="100%" />
-                      <v-btn 
-                        href="https://enrollment.care/esc/talentlaunch/"
-                        rounded
-                        flat
-                        text="View"
-                        target="_blank"
-                        append-icon="mdi-open-in-new"
-                        color="orange-darken-2"
-                        class="ma-4"
-                      />
+                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover href="https://enrollment.care/esc/talentlaunch/" target="_blank">
+                      <h4 class="my-2 mx-4 text-white">Enrollment.care</h4>
+                      <img src="/enrollcare.png" class="border-t mb-n3" width="100%" />
                     </v-card>
                   </v-col>
                 </v-row>
@@ -306,17 +246,46 @@
                   color="orange-darken-2"
                   class="ma-4"
                 />
-                
               </v-col>
               <v-col cols="12" lg="9" class="px-sm-4 pa-lg-6 text-center">
                 <img src="/event1.png" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.lgAndUp ? null : '100%'" />
                 <img src="/event2.png" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.lgAndUp ? null : '100%'" />
-                <img src="/event4.png" class="elevation-10 rounded-lg ma-2" />
-                <img src="/event3.png" class="elevation-10 rounded-lg ma-2" />
+                <img src="/event4.png" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? null : '100%'" />
+                <img src="/event3.png" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? null : '100%'" />
               </v-col>
             </v-row>
           </v-card>
-          <p class="text-grey-lighten-4 my-10">More to come...</p>
+        </v-col>
+
+        <v-col cols="12">
+          <v-card elevation="10" color="rgba(0,0,0,.1)" class="pa-3 text-body-2" rounded="lg">
+            <v-row>
+              <v-col cols="12" class="px-sm-4 pa-lg-6 text-white" style="background: rgba(0,0,0,.2)">
+                <h2 class="font-weight-light">Front-end Web Developer</h2>
+                <p>For Fun</p>
+              </v-col>
+              <v-col cols="12" lg="3" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
+                <h4>LYRIX+</h4>
+                <p>React</p>
+                <p class="mt-3">Another app I created while learning React where I used two different APIs to grab song lyrics and music Videos. I thought it might be cool to look up lyrics for a song and simultaneously be able to watch the corresponding music video.</p>
+                <p class="mt-3">So that's what I did and it turned out to perform quite well.  Of course having a marketing mind I came up with a name and logo for it. :)</p>
+                <v-btn 
+                  href="https://github.com/sixindustries/lyrix"
+                  rounded
+                  flat
+                  text="lyrix"
+                  target="_blank"
+                  append-icon="mdi-github"
+                  color="orange-darken-2"
+                  class="ma-4"
+                />
+              </v-col>
+              <v-col cols="12" lg="9" class="px-sm-4 pa-lg-6 text-center">
+                <img src="/ly-d.png" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? null : '100%'" />
+                <img src="/ly-m.png" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? null : '100%'" />
+              </v-col>
+            </v-row>
+          </v-card>
         </v-col>
       </v-row>
     </v-card>    
@@ -324,13 +293,5 @@
 </template>
 
 <script>
-  export default {
-    
-  }
+  export default {}
 </script>
-
-<style>
-  .dropShadow {
-    text-shadow: #333 1px 1px 1px!important;
-  }
-</style>
