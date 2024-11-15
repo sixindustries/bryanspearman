@@ -80,7 +80,7 @@
                 />
               </v-col>
               <v-col cols="12" lg="9" class="px-sm-4 pa-lg-6">
-                <img src="/eoe.png" width="100%" class="elevation-10 rounded-lg" />
+                <img src="/eoe.png" class="elevation-10 rounded-lg" />
               </v-col>
               <v-divider class="mt-3 mb-5" color="black" />
               <v-col cols="12" lg="3" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
