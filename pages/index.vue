@@ -1,5 +1,5 @@
 <template>  
-  <div style="height: 100%; width: 100%; background-image: url('/main-bg.png'); background-repeat: repeat;">  
+  <div style="height: 100%; width: 100%; background-image: url('/main-bg.png'); background-repeat: repeat;" id="top">  
      <v-card 
       flat
       :rounded="$vuetify.display.lgAndUp ? 'xl' : '0'"
@@ -80,7 +80,7 @@
                 />
               </v-col>
               <v-col cols="12" lg="9" class="px-sm-4 pa-lg-6">
-                <img src="/eoe.png" width="100%" class="elevation-10 rounded-lg" />
+                <v-img src="/eoe.png" class="elevation-10 ma-2" rounded="lg" max-width="900" />
               </v-col>
               <v-divider class="mt-3 mb-5" color="black" />
               <v-col cols="12" lg="3" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
@@ -153,12 +153,12 @@
                   <v-col cols="6">Before</v-col>
                   <v-col cols="6">After</v-col>
                 </v-row>
-                <img src="/vow1.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? '800px' : '100%'" />
+                <v-img src="/vow1.jpg" class="elevation-10 ma-2" rounded="lg" aspect-ratio="16:9" />
                 <v-row class="text-center font-weight-bold text-h6 text-grey-lighten-4">
                   <v-col cols="6">Before</v-col>
                   <v-col cols="6">After</v-col>
                 </v-row>
-                <img src="/vow2.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? '800px' : '100%'" />
+                <v-img src="/vow2.jpg" class="elevation-10 ma-2" rounded="lg" aspect-ratio="16:9" />
               </v-col>
             </v-row>
           </v-card>
@@ -183,9 +183,9 @@
                   <v-col cols="6">Before</v-col>
                   <v-col cols="6">After</v-col>
                 </v-row>
-                <img src="/wssl-b4-after.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? '800px' : '100%'" />
-                <img src="/iHeart2.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? '800px' : '100%'" />
-                <img src="/iHeartRadio.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? '800px' : '100%'" />
+                <v-img src="/wssl-b4-after.jpg" class="elevation-10 ma-2" rounded="lg" aspect-ratio="16:9" />
+                <v-img src="/iHeart2.jpg" class="elevation-10 ma-2" rounded="lg" aspect-ratio="16:9" />
+                <v-img src="/iHeartRadio.jpg" class="elevation-10 ma-2" rounded="lg" aspect-ratio="16:9" />
               </v-col>
             </v-row>
           </v-card>
@@ -206,8 +206,8 @@
                 <p class="mt-3">Here's a quick look at the company website I coded and a few oldie but goodie screen grabs from that time.</p>
               </v-col>
               <v-col cols="12" lg="9" class="px-sm-4 pa-lg-6 text-center">
-                <img src="/eyeobiz.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? '800px' : '100%'" />
-                <img src="/clients.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? '800px' : '100%'" />
+                <v-img src="/eyeobiz.jpg" class="elevation-10 ma-2" rounded="lg" max-width="800" />
+                <v-img src="/clients.jpg" class="elevation-10 ma-2" rounded="lg" max-width="800" />
               </v-col>
             </v-row>
           </v-card>
@@ -286,6 +286,10 @@
               </v-col>
             </v-row>
           </v-card>
+          <div class="mb-5 mt-10 text-center">
+            <v-btn icon="mdi-chevron-up" density="compact" color="black" @click="goToTop()" />
+          </div>
+          
         </v-col>
       </v-row>
     </v-card>    
@@ -293,5 +297,11 @@
 </template>
 
 <script>
-  export default {}
+  export default {
+    methods: {
+      goToTop() {
+       return window.scrollTo(0, 0);
+      }
+    }
+  }
 </script>
