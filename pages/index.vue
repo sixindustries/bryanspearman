@@ -86,8 +86,8 @@
               <v-col cols="12" lg="3" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
                 <h3>Company Websites</h3>
                 <p>VueJS, Vuetify, Nuxt, Kontent.ai, Directus</p>
-                <p class="mt-3">Each of the websites was constructed and existing on WordPress when I joined the company and the ad agency that was hosting them was charging over $7,000/month to do so. I saw an opportunity to both reduce the cost of hosting as well as greatly enhance the designs and ease of maintenance.</p>
-                <p class="mt-3">So I began coding each one in Vue, Vuetify and Nuxt with a headless CMS via Kontent.ai and then eventually Directus.  The end result was hosting costs of less than $50/month, much more up-to-date websites, and lightening fast content updates via REST API.</p>
+                <p class="mt-3">Each of the websites was constructed and deployed on WordPress when I joined the company and the ad agency that was hosting them was charging over $7,000/month to do so. I saw an opportunity to both reduce the cost of hosting as well as greatly enhance the designs and ease of maintenance.</p>
+                <p class="mt-3">So I began coding each one in Vue and completely redesigning the UIs.  Sadly I didn't capture any screenshots of the old sites but the waybackmachine probably has them. I added in Vuetify and Nuxt with a headless CMS via Kontent.ai and then eventually Directus.  The end result was hosting costs of less than $50/month, much more up-to-date websites, and lightening fast content updates via REST API.</p>
                 <p class="mt-3">There are other sites not shown here for brevity.</p>
               </v-col>
               <v-col cols="12" lg="9" class="px-sm-4 pa-lg-6">
@@ -123,9 +123,9 @@
                     </v-card>
                   </v-col>
                   <v-col cols="12" sm="6">
-                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover href="https://enrollment.care/esc/talentlaunch/" target="_blank">
-                      <h4 class="my-2 mx-4 text-white">Enrollment.care</h4>
-                      <img src="/enrollcare.png" class="border-t mb-n3" width="100%" />
+                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover href="https://habanerosvodka.com/" target="_blank">
+                      <h4 class="my-2 mx-4 text-white">Habaneros Vodka</h4>
+                      <img src="/haba.jpg" class="border-t mb-n3" width="100%" />
                     </v-card>
                   </v-col>
                 </v-row>
@@ -175,7 +175,7 @@
                 <h4>WSSL 100 Radio Station</h4>
                 <p>HTML, CSS, JavaScript</p>
                 <p class="mt-3">At iHeart Radio I wore a lot of hats.  From coding UI/UX improvments for the station websites, to social media management and training for the staff, to producing web shows for the WSSL 100 Ellis & Bradley morning show, to creating custom graphics for shows, events and digital media ads for contests and sponsors.</p>
-                <p class="mt-3">It was a fun place and I brought a lot of knowledge and talent to the team for their online presence and they told me often.</p>
+                <p class="mt-3">It was a fun place and I brought a lot of knowledge and talent to the team for their online presence and they told me so often.</p>
                 <p class="mt-3">Here's a before and after off WSSl's homepage and some other graphics that I made along the way.</p>
               </v-col>
               <v-col cols="12" lg="9" class="px-sm-4 pa-lg-6 text-center">
@@ -201,7 +201,7 @@
               <v-col cols="12" lg="4" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
                 <h4>Company Website</h4>
                 <p>HTML, CSS, JavaScript</p>
-                <p class="mt-3">In 2008 I decided to take a stab at running my own web design firm. I was able to bring a dozen or so clients in and I worked really hard as a one-man business but after my first year I realized I would probably not enjoy the break-neck pace that was required day in and day out nonstop.  But I stuck it out another 10 months and finally decided to sell the business to friend and move back over to working for a larger company.</p>
+                <p class="mt-3">In 2008 I decided to take a stab at running my own web design firm. I was able to bring a dozen or so clients in and I worked really hard as a one-man business but after my first year I realized I would probably not enjoy the break-neck pace that was required day in and day out nonstop.  But I stuck it out another 10 months and finally decided to sell the business to a friend and move back over to working for a larger company.</p>
                 <p class="mt-3">Either way, I enjoyed the experience and gained huge amounts of knowledge about business, sales and 'hussle' :)</p>
                 <p class="mt-3">Here's a quick look at the company website I coded and a few oldie but goodie screen grabs from that time.</p>
               </v-col>
