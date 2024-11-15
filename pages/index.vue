@@ -95,7 +95,7 @@
                   <v-col cols="12" sm="6">
                     <v-card rounded="lg" color="rgba(0,0,0,.2)" hover href="https://iagbenefits.com" target="_blank">
                       <h4 class="my-2 mx-4 text-white">IAG</h4>
-                      <img src="/iag.png" width="100%" class="mb-n3" />
+                      <img src="/iag.png" :width="$vuetify.display.smAndUp ? '800px' : '100%'" class="mb-n3" />
                     </v-card>
                   </v-col>
                   <v-col cols="12" sm="6">
@@ -153,12 +153,12 @@
                   <v-col cols="6">Before</v-col>
                   <v-col cols="6">After</v-col>
                 </v-row>
-                <img src="/vow1.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.lgAndUp ? '' : '100%'" />
+                <img src="/vow1.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? '800px' : '100%'" />
                 <v-row class="text-center font-weight-bold text-h6 text-grey-lighten-4">
                   <v-col cols="6">Before</v-col>
                   <v-col cols="6">After</v-col>
                 </v-row>
-                <img src="/vow2.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.lgAndUp ? '' : '100%'" />
+                <img src="/vow2.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? '800px' : '100%'" />
               </v-col>
             </v-row>
           </v-card>
@@ -183,9 +183,9 @@
                   <v-col cols="6">Before</v-col>
                   <v-col cols="6">After</v-col>
                 </v-row>
-                <img src="/wssl-b4-after.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.lgAndUp ? '' : '100%'" />
-                <img src="/iHeart2.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.lgAndUp ? '' : '100%'" />
-                <img src="/iHeartRadio.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.lgAndUp ? '' : '100%'" />
+                <img src="/wssl-b4-after.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? '800px' : '100%'" />
+                <img src="/iHeart2.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? '800px' : '100%'" />
+                <img src="/iHeartRadio.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? '800px' : '100%'" />
               </v-col>
             </v-row>
           </v-card>
@@ -206,8 +206,8 @@
                 <p class="mt-3">Here's a quick look at the company website I coded and a few oldie but goodie screen grabs from that time.</p>
               </v-col>
               <v-col cols="12" lg="9" class="px-sm-4 pa-lg-6 text-center">
-                <img src="/eyeobiz.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.lgAndUp ? '' : '100%'" />
-                <img src="/clients.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.lgAndUp ? '' : '100%'" />
+                <img src="/eyeobiz.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? '800px' : '100%'" />
+                <img src="/clients.jpg" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? '800px' : '100%'" />
               </v-col>
             </v-row>
           </v-card>
@@ -248,10 +248,10 @@
                 />
               </v-col>
               <v-col cols="12" lg="9" class="px-sm-4 pa-lg-6 text-center">
-                <img src="/event1.png" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.lgAndUp ? null : '100%'" />
-                <img src="/event2.png" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.lgAndUp ? null : '100%'" />
-                <img src="/event4.png" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? null : '100%'" />
-                <img src="/event3.png" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? null : '100%'" />
+                <v-img src="/event1.png" class="elevation-10 ma-2" rounded="lg" max-width="800" />
+                <v-img src="/event2.png" class="elevation-10 ma-2" rounded="lg" max-width="800" />
+                <v-img src="/event4.png" class="elevation-10 ma-2" rounded="lg" max-width="400" />
+                <v-img src="/event3.png" class="elevation-10 ma-2" rounded="lg" max-width="400" />
               </v-col>
             </v-row>
           </v-card>
@@ -267,7 +267,7 @@
               <v-col cols="12" lg="3" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
                 <h4>LYRIX+</h4>
                 <p>React</p>
-                <p class="mt-3">Another app I created while learning React where I used two different APIs to grab song lyrics and music Videos. I thought it might be cool to look up lyrics for a song and simultaneously be able to watch the corresponding music video.</p>
+                <p class="mt-3">Another app I created while tinkering with React where I used two different APIs to grab song lyrics and music Videos. I thought it might be cool to look up lyrics for a song and simultaneously be able to watch the corresponding music video.</p>
                 <p class="mt-3">So that's what I did and it turned out to perform quite well.  Of course having a marketing mind I came up with a name and logo for it. :)</p>
                 <v-btn 
                   href="https://github.com/sixindustries/lyrix"
@@ -277,12 +277,12 @@
                   target="_blank"
                   append-icon="mdi-github"
                   color="orange-darken-2"
-                  class="ma-4"
+                  class="my-4"
                 />
               </v-col>
               <v-col cols="12" lg="9" class="px-sm-4 pa-lg-6 text-center">
-                <img src="/ly-d.png" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? null : '100%'" />
-                <img src="/ly-m.png" class="elevation-10 rounded-lg ma-2" :width="$vuetify.display.smAndUp ? null : '100%'" />
+                <v-img src="/ly-d.png" class="elevation-10 ma-2" rounded="lg" max-width="800" />
+                <v-img src="/ly-m.png" class="elevation-10 ma-2" rounded="lg" max-width="400" />
               </v-col>
             </v-row>
           </v-card>
