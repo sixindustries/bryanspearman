@@ -5,7 +5,7 @@
       :rounded="$vuetify.display.lgAndUp ? 'xl' : '0'"
       max-width="1000"
       color="transparent" 
-      class="px-4 px-sm-10 px-md-16 mt-sm-4 pt-5 mx-auto" 
+      class="px-4 px-sm-10 px-md-16 mt-sm-4 pt-5 pt-md-8 mx-auto" 
       :style="$vuetify.display.smAndUp ? 'background-image: url(\'/bryan.png\'); background-position: center right; background-repeat: no-repeat;' : 'background-image: url(\'/bryan.png\'); background-position: top right; background-repeat: no-repeat;'"
      >
      <h1 class="text-h3 text-sm-h2 font-weight-bold pt-6">
@@ -49,7 +49,7 @@
       </v-btn>
     </v-card>
 
-    <v-card color="transparent" class="px-4 px-md-16 pt-16 pb-16 mx-auto">
+    <v-card color="transparent" class="px-4 px-md-16 pt-16 pb-16 mx-auto" max-width="1500" flat>
       <v-row class="pt-lg-16">
         <v-col cols="12" class="text-h4 font-weight-thin text-white">          
           Portfolio
@@ -62,7 +62,7 @@
                 <h2 class="font-weight-light">Senior Front-end Web Developer, UI/UX Engineer</h2>
                 <p>IAG, Inc.</p>
               </v-col>
-              <v-col cols="12" lg="3" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
+              <v-col cols="12" lg="4" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
                 <h3>Embedded Onboarding Enrollment (EOE)</h3>
                 <p>VueJS, Vuetify, Nuxt, Java, SQL</p>
                 <p class="mt-3">Several months into this position I was asked to develop an internal application to allow new hires to fill out their onboarding paper work digitally and have it submitted to HR in PDF format.</p>
@@ -79,7 +79,7 @@
                   class="my-4"
                 />
               </v-col>
-              <v-col cols="12" lg="9" class="px-sm-4 pa-lg-6">
+              <v-col cols="12" lg="8" class="px-sm-4 pa-lg-6 text-center">
                 <v-img src="/eoe.png" class="elevation-10 ma-2" rounded="lg" max-width="900" />
               </v-col>
               <v-divider class="mt-3 mb-5" color="black" />
@@ -198,16 +198,16 @@
                 <h2 class="font-weight-light">Full Stack Developer</h2>
                 <p>EYEOBIZ, LLC</p>
               </v-col>
-              <v-col cols="12" lg="3" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
+              <v-col cols="12" lg="4" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
                 <h4>Company Website</h4>
                 <p>HTML, CSS, JavaScript</p>
                 <p class="mt-3">In 2008 I decided to take a stab at running my own web design firm. I was able to bring a dozen or so clients in and I worked really hard as a one-man business but after my first year I realized I would probably not enjoy the break-neck pace that was required day in and day out nonstop.  But I stuck it out another 10 months and finally decided to sell the business to friend and move back over to working for a larger company.</p>
                 <p class="mt-3">Either way, I enjoyed the experience and gained huge amounts of knowledge about business, sales and 'hussle' :)</p>
                 <p class="mt-3">Here's a quick look at the company website I coded and a few oldie but goodie screen grabs from that time.</p>
               </v-col>
-              <v-col cols="12" lg="9" class="px-sm-4 pa-lg-6 text-center">
-                <v-img src="/eyeobiz.jpg" class="elevation-10 ma-2" rounded="lg" max-width="800" />
-                <v-img src="/clients.jpg" class="elevation-10 ma-2" rounded="lg" max-width="800" />
+              <v-col cols="12" lg="8" class="px-sm-4 pa-lg-6 text-center">
+                <v-img src="/eyeobiz.jpg" class="elevation-10 my-2 mx-auto" rounded="lg" max-width="800" />
+                <v-img src="/clients.jpg" class="elevation-10 my-2 mx-auto" rounded="lg" max-width="800" />
               </v-col>
             </v-row>
           </v-card>
@@ -220,7 +220,7 @@
                 <h2 class="font-weight-light">Full Stack Developer</h2>
                 <p>For Fun</p>
               </v-col>
-              <v-col cols="12" lg="3" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
+              <v-col cols="12" lg="4" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
                 <h4>The EventListener</h4>
                 <p>React, MongoDB, Node, Express</p>
                 <p class="mt-3">This is a little app that I built for fun while learning React because I was frustrated that my 'DaysUntil' mobile app only counted down to events and then stopped counting.</p>
@@ -234,7 +234,7 @@
                   target="_blank"
                   append-icon="mdi-github"
                   color="orange-darken-2"
-                  class="ma-4"
+                  class="my-4 me-2"
                 />
                 <v-btn 
                   href="https://github.com/sixindustries/event-listener-server"
@@ -244,14 +244,20 @@
                   target="_blank"
                   append-icon="mdi-github"
                   color="orange-darken-2"
-                  class="ma-4"
+                  class="my-4"
                 />
               </v-col>
-              <v-col cols="12" lg="9" class="px-sm-4 pa-lg-6 text-center">
-                <v-img src="/event1.png" class="elevation-10 ma-2" rounded="lg" max-width="800" />
-                <v-img src="/event2.png" class="elevation-10 ma-2" rounded="lg" max-width="800" />
-                <v-img src="/event4.png" class="elevation-10 ma-2" rounded="lg" max-width="400" />
-                <v-img src="/event3.png" class="elevation-10 ma-2" rounded="lg" max-width="400" />
+              <v-col cols="12" lg="8" class="px-sm-4 pa-lg-6 text-center">
+                <v-img src="/event1.png" class="elevation-10 ma-2" rounded="lg" aspect-ratio="16:9" />
+                <v-img src="/event2.png" class="elevation-10 ma-2" rounded="lg" aspect-ratio="16:9" />
+                <v-row>
+                  <v-col cols="12" sm="6">
+                    <v-img src="/event4.png" class="elevation-10 my-2" rounded="lg" max-width="350" />
+                  </v-col>
+                  <v-col cols="12" sm="6">
+                    <v-img src="/event3.png" class="elevation-10 my-2" rounded="lg" max-width="350" />
+                  </v-col>
+                </v-row>
               </v-col>
             </v-row>
           </v-card>
@@ -264,7 +270,7 @@
                 <h2 class="font-weight-light">Front-end Web Developer</h2>
                 <p>For Fun</p>
               </v-col>
-              <v-col cols="12" lg="3" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
+              <v-col cols="12" lg="4" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
                 <h4>LYRIX+</h4>
                 <p>React</p>
                 <p class="mt-3">Another app I created while tinkering with React where I used two different APIs to grab song lyrics and music Videos. I thought it might be cool to look up lyrics for a song and simultaneously be able to watch the corresponding music video.</p>
@@ -280,9 +286,9 @@
                   class="my-4"
                 />
               </v-col>
-              <v-col cols="12" lg="9" class="px-sm-4 pa-lg-6 text-center">
+              <v-col cols="12" lg="8" class="px-sm-4 pa-lg-6 text-center">
                 <v-img src="/ly-d.png" class="elevation-10 ma-2" rounded="lg" max-width="800" />
-                <v-img src="/ly-m.png" class="elevation-10 ma-2" rounded="lg" max-width="400" />
+                <v-img src="/ly-m.png" class="elevation-10 ma-2" rounded="lg" max-width="350" />
               </v-col>
             </v-row>
           </v-card>
