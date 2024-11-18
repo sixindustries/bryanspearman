@@ -2,17 +2,20 @@
   <div style="height: 100%; width: 100%; background-image: url('/main-bg.png'); background-repeat: repeat;" id="top">  
      <v-card 
       flat
-      :rounded="$vuetify.display.lgAndUp ? 'xl' : '0'"
+      :rounded="$vuetify.display.mdAndUp ? 'xl' : '0'"
       max-width="1000"
       color="transparent" 
-      class="px-4 px-sm-10 px-md-16 mt-sm-4 pt-5 pt-md-8 mx-auto" 
+      class="px-4 px-sm-10 px-md-16 mx-auto" 
       :style="$vuetify.display.smAndUp ? 'background-image: url(\'/bryan.png\'); background-position: center right; background-repeat: no-repeat;' : 'background-image: url(\'/bryan.png\'); background-position: top right; background-repeat: no-repeat;'"
      >
      <h1 class="text-h3 text-sm-h2 font-weight-bold pt-6">
         Hi,<br />
         I'm Bryan.
       </h1>
-      <p class="text-h5 text-sm-h4 font-weight-thin pt-1 pb-16 pb-sm-0">Front-end Web Developer</p>
+      <p class="text-h5 text-sm-h4 font-weight-thin pt-1 pb-16 pb-sm-0">
+        Front-end Web Developer<br />
+        UI/UX Engineer
+        </p>
       <v-row class="pt-6 pb-16 text-center" style="max-width: 550px;" align="start" justify="center">
         <v-col cols="3" sm="2">          
           <v-icon color="green-darken-2" size="x-large">mdi-vuejs</v-icon>
@@ -222,7 +225,7 @@
               </v-col>
               <v-col cols="12" lg="4" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
                 <h4>The EventListener</h4>
-                <p>React, MongoDB, Node, Express</p>
+                <p>React, Bootstrap, MongoDB, Node, Express</p>
                 <p class="mt-3">This is a little app that I built for fun while learning React because I was frustrated that my 'DaysUntil' mobile app only counted down to events and then stopped counting.</p>
                 <p class="mt-3">I wanted an app that would count past an event and show how many days (since) the event that it counted down to and I couldn't help but use a little play on words with the title that developers might appreciate. :)</p>
                 <p class="mt-3">This is pretty old and the backend that I had setup on a free source has expired but here's a few screenshots and the repos for the front and back.</p>
@@ -272,7 +275,7 @@
               </v-col>
               <v-col cols="12" lg="4" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
                 <h4>LYRIX+</h4>
-                <p>React</p>
+                <p>React, Bootstrap</p>
                 <p class="mt-3">Another app I created while tinkering with React where I used two different APIs to grab song lyrics and music Videos. I thought it might be cool to look up lyrics for a song and simultaneously be able to watch the corresponding music video.</p>
                 <p class="mt-3">So that's what I did and it turned out to perform quite well.  Of course having a marketing mind I came up with a name and logo for it. :)</p>
                 <v-btn 
@@ -291,11 +294,32 @@
                 <v-img src="/ly-m.png" class="elevation-10 ma-2" rounded="lg" max-width="350" />
               </v-col>
             </v-row>
+          </v-card>       
+        </v-col>
+
+        <v-col cols="12">
+          <v-card elevation="10" color="rgba(0,0,0,.1)" class="pa-3 text-body-2" rounded="lg">
+            <v-row>
+              <v-col cols="12" class="px-sm-4 pa-lg-6 text-white" style="background: rgba(0,0,0,.2)">
+                <h2 class="font-weight-light">Full Stack Web Developer</h2>
+                <p>Code & Tonic, LLC</p>
+              </v-col>
+              <v-col cols="12" lg="4" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
+                <h4>Judgity</h4>
+                <p>React, Redux, Bootstrap, Vue, Vuetify, Nuxt, Pinia, Firebase</p>
+                <p class="mt-3">While I was still in school my neighbor asked if I'd like to develop an app with them to adjudicate regional theatre competitions.</p>
+                <p class="mt-3">Essentially, judges of the competitions would need an app they could use on tablet or laptop to judge each competition in real-time.  I found this super interesting and so I accepted the challenge.</p>
+                <p class="mt-3">The first order of business was to give the app a name so I went with Judgity as I thought it was kind of playful yet catchy.  Next, I began building out the app in React and Redux using Firebase as the real-time database.</p>
+                <p class="mt-3">My goal was to be able to provide real-time scores to a scoreboard where attendees could see the judges' scores once each judge had input all of their scores.  And it worked!  The project is still on-going but currently under construction as I decided to migrate it to Vue; the framework I prefer.  Switching to Vue, Vuetify and Pinia will continue to enhance the app and streamline the interface to easily conform to each type of competition.</p>
+              </v-col>
+              <v-col cols="12" lg="8" class="px-sm-4 pa-lg-6 text-center">
+                <v-img src="/judg-lrg.png" class="elevation-10 ma-2" rounded="lg" max-width="800" />
+              </v-col>
+            </v-row>
           </v-card>
           <div class="mb-5 mt-10 text-center">
             <v-btn icon="mdi-chevron-up" density="compact" color="black" @click="goToTop()" />
-          </div>
-          
+          </div>          
         </v-col>
       </v-row>
     </v-card>    
@@ -311,3 +335,8 @@
     }
   }
 </script>
+<style>
+  html {
+  scroll-behavior: smooth;
+}
+</style>
