@@ -96,31 +96,31 @@
               <v-col cols="12" lg="9" class="px-sm-4 pa-lg-6">
                 <v-row class="mb-3">
                   <v-col cols="12" sm="6">
-                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover href="https://iagbenefits.com" target="_blank">
+                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover href="https://iagbenefits.com" target="_blank" height="100%">
                       <h4 class="my-2 mx-4 text-white">IAG</h4>
-                      <img src="/iag.png" :width="$vuetify.display.smAndUp ? '800px' : '100%'" class="mb-n3" />
+                      <img src="/iag.png" width="100%" class="mb-n3" />
                     </v-card>
                   </v-col>
                   <v-col cols="12" sm="6">
-                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover href="https://essentialstaffcare.com" target="_blank">
+                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover href="https://essentialstaffcare.com" target="_blank" height="100%">
                       <h4 class="my-2 mx-4 text-white">Essential StaffCARE</h4>
                       <img src="/esc.png" class="border-t mb-n3" width="100%" />
                     </v-card>
                   </v-col>
                   <v-col cols="12" sm="6">
-                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover href="https://events.essentialstaffcare.com" target="_blank">
+                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover href="https://events.essentialstaffcare.com" target="_blank" height="100%">
                       <h4 class="my-2 mx-4 text-white">Essential StaffCARE Events</h4>
                       <img src="/events.png" width="100%" class="mb-n3" />
                     </v-card>
                   </v-col>
                   <v-col cols="12" sm="6">
-                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover href="https://hospitalitycare.com" target="_blank">
+                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover href="https://hospitalitycare.com" target="_blank" height="100%">
                       <h4 class="my-2 mx-4 text-white">HospitalityCARE</h4>
                       <img src="/hc.png" class="border-t mb-n3" width="100%" />
                     </v-card>
                   </v-col>
                   <v-col cols="12" sm="6">
-                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover href="https://flexiblestaffcare.com" target="_blank">
+                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover href="https://flexiblestaffcare.com" target="_blank" height="100%">
                       <h4 class="my-2 mx-4 text-white">Flexible StaffCARE</h4>
                       <img src="/fsc.png" width="100%" class="mb-n3" />
                     </v-card>
@@ -132,7 +132,37 @@
                     </v-card>
                   </v-col>
                 </v-row>
-              </v-col>              
+              </v-col> 
+              <v-divider class="mt-3 mb-5" color="black" />
+              <v-col cols="12" lg="3" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
+                <h3>Graphics, Annimations</h3>
+                <p>SVGator, VueJS</p>
+                <p class="mt-3">At times I was asked to create graphics or wireframes for projects and I enjoyed incorporating animation where appropriate.</p>
+                <p class="mt-3">Here is one of the animated graphics I created for 404, under construction and error messages for one the apps.</p>
+              </v-col>
+              <v-col cols="12" lg="9" class="px-sm-4 pa-lg-6">
+                <v-row class="mb-3">
+                  <v-col cols="12" sm="6">
+                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover height="100%">
+                      <h4 class="my-2 mx-4 text-white">Under Construction Dog</h4>
+                      <ConstructionDog />
+                    </v-card>
+                  </v-col>
+                  <v-col cols="12" sm="6">
+                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover height="100%">
+                      <h4 class="my-2 mx-4 text-white">System Error Dog</h4>
+                      <ErrorOther />
+                    </v-card>
+                  </v-col>
+                  <v-col cols="12" sm="6">
+                    <v-card rounded="lg" color="rgba(0,0,0,.2)" hover height="100%">
+                      <h4 class="mt-2 mx-4 text-white">404 Lamp</h4>
+                      <p class="text-white mx-4">Definitely a PIXAR borrow but this was not customer-facing.</p>
+                      <FourOFourLamp />
+                    </v-card>
+                  </v-col>
+                </v-row>
+              </v-col>             
             </v-row>
           </v-card>
         </v-col>
@@ -316,18 +346,22 @@
                 <v-img src="/judg-lrg.png" class="elevation-10 ma-2" rounded="lg" max-width="800" />
               </v-col>
             </v-row>
-          </v-card>
-          <div class="mb-5 mt-10 text-center">
-            <v-btn icon="mdi-chevron-up" density="compact" color="black" @click="goToTop()" />
-          </div>          
+          </v-card>                 
         </v-col>
       </v-row>
+      <div class="mb-5 mt-10 text-center">
+        <v-btn icon="mdi-chevron-up" density="compact" color="black" @click="goToTop()" />
+      </div>   
     </v-card>    
   </div> 
 </template>
 
 <script>
+import ConstructionDog from '~/components/ConstructionDog.vue';
+import ErrorOther from '~/components/ErrorOther.vue';
+import FourOFourLamp from '~/components/FourOFourLamp.vue';
   export default {
+    components: { ConstructionDog, ErrorOther, FourOFourLamp },
     methods: {
       goToTop() {
        return window.scrollTo(0, 0);
@@ -335,6 +369,7 @@
     }
   }
 </script>
+
 <style>
   html {
   scroll-behavior: smooth;
