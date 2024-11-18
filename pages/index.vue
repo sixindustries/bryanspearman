@@ -67,7 +67,7 @@
               </v-col>
               <v-col cols="12" lg="4" class="px-sm-4 pa-lg-6 text-grey-lighten-4">
                 <h3>Embedded Onboarding Enrollment (EOE)</h3>
-                <p>VueJS, Vuetify, Nuxt, Java, SQL</p>
+                <p>VueJS, Vuetify, Nuxt, Java, SQL, BitBucket, Jira</p>
                 <p class="mt-3">Several months into this position I was asked to develop an internal application to allow new hires to fill out their onboarding paper work digitally and have it submitted to HR in PDF format.</p>
                 <p class="mt-3">I began that development but as I reached the benefit enrollment portion I decided to go a little above and beyond the call to make the experience more intuitive and informative.  As the prototype took shape, myself and a back-end dev worked out some endpoints and data structuring to bring it to life.  When upper management saw the work they quickly realized an opportunity to push the application to clients as an embeddedable solution for onboarding systems in our staffing vertical.</p>
                 <p class="mt-3">A year later the app was ready for launch and integrated into hundreds of staffing agencies' on-boarding platforms and became one of IAG's three core insurance enrollment applications.</p>
