@@ -360,14 +360,14 @@
 import ConstructionDog from '~/components/ConstructionDog.vue';
 import ErrorOther from '~/components/ErrorOther.vue';
 import FourOFourLamp from '~/components/FourOFourLamp.vue';
-  export default {
-    components: { ConstructionDog, ErrorOther, FourOFourLamp },
-    methods: {
-      goToTop() {
-       return window.scrollTo(0, 0);
-      }
+export default {
+  components: { ConstructionDog, ErrorOther, FourOFourLamp },
+  methods: {
+    goToTop() {
+      return window.scrollTo(0, 0);
     }
   }
+}
 </script>
 
 <style>
